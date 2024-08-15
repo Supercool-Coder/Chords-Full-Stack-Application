@@ -1,0 +1,14 @@
+PassengerEnabled on
+PassengerAppRoot /home/ww8w0pwb2m0v/Chords-Backend
+PassengerPython /home/ww8w0pwb2m0v/virtualenv/bin/python
+
+# WSGI configuration
+PassengerAppEnv production
+WSGIApplicationGroup %{GLOBAL}
+
+<Directory /home/ww8w0pwb2m0v/Chords-Backend>
+    AllowOverride all
+    Options -MultiViews
+    Require all granted
+</Directory>
+
